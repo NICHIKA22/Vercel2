@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useAtom } from 'jotai';
 import { restaurantAtom } from './restaurantAtom'; // 正しいアトムをインポート
 

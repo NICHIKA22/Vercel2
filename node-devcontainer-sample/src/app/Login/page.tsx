@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from 'react';
-import { useAtom } from 'jotai';
+//import { useAtom } from 'jotai';
 import { useRouter } from 'next/navigation';
-import { userNameAtom } from '../atom/userAtom';
+//import { userNameAtom } from '../atom/userAtom';
 
 // MUI コンポーネントのインポート
 import {
@@ -17,7 +17,7 @@ import {
 } from '@mui/material';
 
 export default function Login() {
-  const [_, setUserName] = useAtom(userNameAtom);
+  //const [_, setUserName] = useAtom(userNameAtom);
   const [inputValue, setInputValue] = useState('');
   const [error, setError] = useState('');
   const router = useRouter();
@@ -28,7 +28,7 @@ export default function Login() {
       return;
     }
     setError('');
-    setUserName(inputValue.trim());
+    //setUserName(inputValue.trim());
     router.push('/Home');
   };
 
